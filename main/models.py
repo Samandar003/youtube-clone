@@ -48,5 +48,3 @@ class Comment(models.Model):
 
 
 
-
-
