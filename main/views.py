@@ -62,7 +62,7 @@ class VideoViewSet(ModelViewSet):
     queryset = Video.objects.all()
     serializer_class = VideoSerializer
     filter_backends = [filters.SearchFilter,]
-    search_fields = ['id','video_name','video_date',]
+    search_fields = ['id','video_name','video_date', 'video_text',]
 
     @action(detail=True, methods=["GET"])
     def comments(self, request, pk):
